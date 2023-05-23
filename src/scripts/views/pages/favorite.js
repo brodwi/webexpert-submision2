@@ -1,4 +1,4 @@
-const NowPlaying = {
+const Favorite = {
     async render() {
       return `
         <h2>Now Playing Page</h2>
@@ -10,4 +10,4 @@ const NowPlaying = {
     },
   };
   
-  export default NowPlaying;
+  export default Favorite;

@@ -1,4 +1,4 @@
-const Upcoming = {
+const Home = {
   async render() {
     return `
       <h2>Upcoming page</h2>
@@ -10,4 +10,4 @@ const Upcoming = {
   },
 };
 
-export default Upcoming;
+export default Home;
