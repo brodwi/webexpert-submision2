@@ -1,8 +1,9 @@
 const Detail = {
-  async render() {
-    return `
-      <h2>Detail Page</h2>
-    `;
+    async render() {
+      return `
+          <div id="detailRestaurant" class="detailRestaurant"></div>
+          <div id="likeButtonContainer"></div>
+          `;
   },
 
   async afterRender() {
