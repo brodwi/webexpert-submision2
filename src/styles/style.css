@@ -22,7 +22,7 @@ body{
   top: 0;
 }
 .app-bar{
-  background-color: #04552f;
+  background-color: #393646;
   display: grid;
   grid-template-columns: auto 1fr auto;
   position: sticky;
@@ -41,14 +41,14 @@ button {
   font-size: 24px;
   padding: 12px;
   cursor: pointer;
-  color: white;
+  color: #F4EEE0;
 }
-.brand {
+.judul {
   display: flex;
   align-items: center;
 }
-.brand h1 {
-  color:white;
+.judul h1 {
+  color:#F4EEE0;
   text-transform: uppercase;
   font-size: 24px;
   user-select: none;

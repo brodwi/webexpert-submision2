@@ -9,7 +9,7 @@ class AppBar extends HTMLElement {
       <div class="menu">
         <button id="hamburgerButton">☰</button>
       </div>
-      <div class="brand">
+      <div class="judul">
         <h1>Restaurant</h1>
       </div>
       <nav id="Drawer" class="navigation">

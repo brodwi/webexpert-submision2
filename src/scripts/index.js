@@ -2,7 +2,7 @@ import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import './components/app-bar';
-import './components/jumbotran';
+import './components/jumbotron';
 import App from './views/app';
 
 const hamburgerButtonElement = document.querySelector('#hamburgerButton');

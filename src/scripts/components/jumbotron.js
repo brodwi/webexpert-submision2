@@ -16,5 +16,5 @@ class Jumbotran extends HTMLElement {
     }
   }
   
-  customElements.define('jumbotran-element', Jumbotran);
+  customElements.define('jumbotron-element', Jumbotran);
   
