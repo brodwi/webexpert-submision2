@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const path = require('path');
- 
 module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/scripts/index.js'),
@@ -42,6 +41,29 @@ module.exports = {
     }),
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: './sw.bundle.js',
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/restaurant-api.dicoding.dev\//,
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'CACHE_NAME',
+            cacheableResponse: {
+              statuses: [200],
+            },
+          },
+        },
+        {
+          urlPattern: /^https:\/\/restaurant-api.dicoding.dev\/images\/medium\//,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'IMAGE-CACHE',
+            expiration: {
+              maxEntries: 10,
+              maxAgeSeconds: 30 * 24 * 60 * 60,
+            },
+          },
+        },
+      ],
     }),
   ],
 };

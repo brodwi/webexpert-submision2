@@ -3,7 +3,14 @@ import '../styles/style.css';
 import '../styles/responsive.css';
 import './components/app-bar';
 import './components/jumbotron';
+import './components/footer';
 import App from './views/app';
+import swRegister from './utils/sw-register';
+
+
+/*
+import './components/footer';
+*/
 
 const hamburgerButtonElement = document.querySelector('#hamburgerButton');
 const drawerElement = document.querySelector('#Drawer');
@@ -13,7 +20,7 @@ const mainContent = document.querySelector('#mainContent');
 
 skipLink.addEventListener('click', (event) => {
   event.preventDefault();
-  mainContent.scrollIntoView({ behavior: 'smooth' });
+  mainContent.scrollIntoView({ behavior: 'smooth', });
   skipLink.blur();
 });
 
@@ -39,4 +46,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });
