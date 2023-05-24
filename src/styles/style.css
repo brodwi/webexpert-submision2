@@ -138,10 +138,10 @@ main {
 }
 
 .latest h1 {
+  color: black;
   font-weight: 700;
   font-size: 2em;
   margin-bottom: 50px;
-  color:#04552f ;
 }
 
 .list {
@@ -248,12 +248,19 @@ main {
   text-align: justify;
 }
 
+/*
+detail
+*/
+
 .detailRestaurant {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
+}
+.restaurants__name{
+  text-align: center;
 }
 
 .detailRestaurant .restaurant__image {
@@ -263,8 +270,23 @@ main {
 .detailRestaurant .restaurant__info h4 {
   padding-top:10px ;
   padding-bottom: 10px;
-  color: #04552f;
-
+  color: #393646;
+}
+.review {
+    padding: 6px;
+}
+.review .review__name {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  color: #393646
+}
+.review .review__date {
+  font-size: small;
+}
+.review .review__text {
+  font-style: italic;
+  font-size: large;
 }
 .like {
   width: 55px;
