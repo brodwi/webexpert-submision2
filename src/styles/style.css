@@ -55,7 +55,7 @@ button {
   align-items: center;
 }
 .judul h1 {
-  color:white;
+  color: #F4EEE0;
   text-transform: uppercase;
   font-size: 24px;
   user-select: none;
@@ -318,17 +318,17 @@ detail
 }
 footer {
   padding: 16px;
-  background-color: #141414;
+  background-color: #393646;
 }
 footer  p {
   margin-top: 16px;
   text-align: center;
-  color: #aaaaaa;
+  color: #F4EEE0;
 }
 footer a {
   width: 44px;
   height: 44px;
-  color: #04552f;
+  color: red;
   text-decoration: none;
   display: inline-block;
  }

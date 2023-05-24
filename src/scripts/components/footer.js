@@ -7,8 +7,8 @@ class Jumbotran extends HTMLElement {
       this.innerHTML = `
        <footer>
           <p>
-          Copyright © 2023 - Restaurant Apps
-          <a href="#" rel="noreferrer">Explore</a>
+          Copyright © 2023 - Brodwi Restaurant Apps
+          <a href="https://github.com/brodwi">About</a>
           </p>
       </footer>
       `;
