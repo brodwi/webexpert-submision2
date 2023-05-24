@@ -1,7 +1,7 @@
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 body{
   min-height: 100vh;
@@ -39,12 +39,8 @@ app-bar
   0 6px 6px rgba(0, 0, 0, 0.1);
 }
 .menu{
-  background-color: #393646;
-  width: 100%;
   display: flex;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
+  align-items: center; 
 }
 button {
   background-color: transparent;
@@ -66,12 +62,12 @@ button {
   padding: 10px;
 }
 .navigation {
-  background-color: #393646;
-  width: 100%;
-  display: flex;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  overflow: hidden;
 }
 .navigation ul {
   padding: 10px;

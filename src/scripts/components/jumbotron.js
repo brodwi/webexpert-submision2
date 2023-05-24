@@ -7,7 +7,7 @@ class Jumbotran extends HTMLElement {
       this.innerHTML = `
       <div class="jumbotron">
       <div class="jumbotron-inner">
-        <h1 class="jumbotron-title">Brodwi Restaurant</h1>
+        <h1 class="jumbotron-title">Restaurant</h1>
         <p class="jumbotron-subtitle">
           Restaurant Harga Kaki Lima, Rasa Bintang Lima.
         </p>
