@@ -284,6 +284,8 @@ detail
   font-style: italic;
   font-size: large;
 }
+/*like
+*/
 .like {
   width: 55px;
   height: 55px;
@@ -306,9 +308,33 @@ detail
   margin: 0 auto;
   min-height: 100%;
 }
-
+.card_content .card_title {
+  padding: 2%
+}
 .content .content__heading {
   padding: 10px;
   text-align: center;
+  color: black;
+}
+footer {
+  padding: 16px;
+  background-color: #141414;
+}
+footer  p {
+  margin-top: 16px;
+  text-align: center;
+  color: #aaaaaa;
+}
+footer a {
+  width: 44px;
+  height: 44px;
   color: #04552f;
+  text-decoration: none;
+  display: inline-block;
+ }
+footer #footerTools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }
