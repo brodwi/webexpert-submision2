@@ -5,7 +5,7 @@ class Jumbotran extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <div class="jumbotron">
+      <div class="jumbotron" crossorigin="anonymous">
       <div class="jumbotron-inner">
         <h1 class="jumbotron-title">Restaurant</h1>
         <p class="jumbotron-subtitle">
