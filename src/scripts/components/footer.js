@@ -1,10 +1,10 @@
 class Jumbotran extends HTMLElement {
-    connectedCallback() {
-      this.render();
-    }
-  
-    render() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    this.innerHTML = `
        <footer>
           <p>
           Copyright © 2023 - Brodwi Restaurant Apps
@@ -12,8 +12,7 @@ class Jumbotran extends HTMLElement {
           </p>
       </footer>
       `;
-    }
   }
-  
-  customElements.define('footer-element', Jumbotran);
-  
+}
+
+customElements.define('footer-element', Jumbotran);

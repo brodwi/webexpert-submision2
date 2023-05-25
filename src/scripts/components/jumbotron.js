@@ -1,10 +1,10 @@
 class Jumbotran extends HTMLElement {
-    connectedCallback() {
-      this.render();
-    }
-  
-    render() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    this.innerHTML = `
       <div class="jumbotron">
       <div class="jumbotron-inner">
         <h1 class="jumbotron-title">Restaurant</h1>
@@ -13,8 +13,7 @@ class Jumbotran extends HTMLElement {
         </p>
       </div>
     </div>`;
-    }
   }
-  
-  customElements.define('jumbotron-element', Jumbotran);
-  
+}
+
+customElements.define('jumbotron-element', Jumbotran);

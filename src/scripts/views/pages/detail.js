@@ -2,9 +2,10 @@ import UrlParser from '../../routes/url-parser';
 import restaurantSource from '../../data/restaurant-source';
 import { createrestaurantsDetailTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
+
 const Detail = {
-    async render() {
-      return `
+  async render() {
+    return `
           <div id="detailRestaurant" class="detailRestaurant"></div>
           <div id="likeButtonContainer"></div>
           `;
@@ -26,7 +27,6 @@ const Detail = {
         rating: restaurant.rating,
       },
     });
-
   },
 };
 
