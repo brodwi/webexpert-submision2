@@ -1,8 +1,10 @@
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createrestaurantsDetailTemplate = (restaurant) => `
   <h2 class="restaurants__name">${restaurant.name}</h2>
-  <img class="restaurants__image" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" crossorigin="anonymous"/>
+  <img class="restaurants__image lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" crossorigin="anonymous"/>
   <div class="restaurant__info">
     <h3>Information</h3>
     <h4>Description</h4>
@@ -32,7 +34,7 @@ const createrestaurantsDetailTemplate = (restaurant) => `
 
 const createrestaurantsItemTemplate = (restaurants) => `
       <div class="card">
-          <img class="card_thumb" src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}" alt="${restaurants.name}" title="${restaurants.name}" crossorigin="anonymous">
+          <img class="card_thumb lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}" alt="${restaurants.name}" title="${restaurants.name}" crossorigin="anonymous">
           <div class="city">${restaurants.city}</div>
           <div class="card_content">
               <p class="card_rating">
